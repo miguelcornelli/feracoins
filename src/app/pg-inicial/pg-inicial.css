@@ -1,27 +1,46 @@
 .container-inicial{
     height: 700px;
     width: 100%;
-    background-color: aqua;
+    background-image: url("../../assets/ima1-01.png");
+    font-size: 500px white;
+}
+.texto {
+    position: absolute;
+    color: white;
+    top: 100px;
+    width: 250px;
+    line-height: 30px;
+    height: 30px;
+    margin-left: 411px;
+    margin-top: 176px;
+    font-size: small;
+}
+.display-1{
+    width: 568px;
+    background-color: red;
+    font-weight: 1000;
+    font-size: 55px;
+
 }
 
 .container-conteudo{
     height: 700px;
     width: 100%;
-    background-color: green;
+    background-color: white;
 }
 
 .container-bitcoin{
     height: 330px;
     width: 100%;
-    background-color: royalblue;
+    background-image: url("../../assets/fundo.png");
 }
 .container-investir{
     height: 800px;
     width: 100%;
-    background-color: orangered;
+    background-image: url("../../assets/imag2-01.png");
 }
 .container-informacoes{
     height: 300px;
     width: 100%;
-    background-color: yellow;
+    background-color:orange;
 }
