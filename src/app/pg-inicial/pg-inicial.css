@@ -1,0 +1,27 @@
+.container-inicial{
+    height: 700px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.container-conteudo{
+    height: 700px;
+    width: 100%;
+    background-color: green;
+}
+
+.container-bitcoin{
+    height: 330px;
+    width: 100%;
+    background-color: royalblue;
+}
+.container-investir{
+    height: 800px;
+    width: 100%;
+    background-color: orangered;
+}
+.container-informacoes{
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+}
