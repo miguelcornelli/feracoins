@@ -1,16 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Contato } from '../app/contatos/shared/contato';
-import { ContatoService } from '../app/contatos/shared/contato.service';
-import { ContatoDataService } from '../app/contatos/shared/contato-data.service';
-
+import { Contato } from '../shared/contato';
+import { ContatoService } from '../shared/contato.service';
+import { ContatoDataService } from '../shared/contato-data.service';
+ 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.css']
 })
-
-export class AppComponent implements OnInit {
-  title = 'project-fera-coins';
+export class EditComponent implements OnInit {
   contato: Contato
   key: string = '';
  

@@ -1,1 +1,302 @@
-/* You can add global styles to this file, and also import other style files */
+/*--------------------------------
+
+
+Cores:
+	Body 		  : #
+	Headers 	: #
+	Primary 	: #
+	Dark      : #
+	Grey 		  : 
+
+Fontes: ARVO
+
+GUIA DE CONTEÚDO
+------------------------------------
+1 > CONFIGURAÇÕES GLOBAIS
+2 > HEADER
+3 > HERO
+4 > NEWLETTER
+5 > FOOTER
+
+------------------------------------*/
+
+
+/* -- CONFIGURAÇÒES GLOBAIS  -- */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	box-sizing: 
+	border-box; 
+	font-family: 'Open Sans', sans-serif
+}
+nav, ul { list-style: none; }
+a { text-decoration: none; 
+	cursor: pointer; 
+	opacity: 0.9;}
+a:hover {opacity: 1;}
+
+/* -- HEADER  -- */
+
+header {
+		background-color: #fff ; 
+		width: 100%; 
+		position: absolute; 
+		top:0; 
+		left:0;
+		display: flex;
+		justify-content:  space-between;
+		align-items: center;
+		padding: 20px 50px;
+	}
+
+header img {width: 200px;}	
+
+header nav {display: flex;}
+header li a {font-weight: bold; color: #000000; background-color: #fff; }
+header li a:hover {color: #707070;}
+header li {margin: 0 15px;}
+header li:first-child {margin-left: 0;}
+header li:last-child {margin-right: 0;}
+@media (max-width: 700px) {
+	header {flex-direction: column;}
+	header img {margin-bottom: 15px;}
+}
+
+.container-master{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 2%;
+	background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px){
+
+	.container-master{
+		height: 100%;
+	}
+
+}
+
+.column{
+	flex-direction: column;
+}
+
+.row{
+	flex-direction: row;
+
+}
+
+
+/* -- FIM HEADER  -- */
+
+/* -- HERO  -- */
+
+.hero {
+	padding-bottom: 50px; 
+	background-image: url(./assets/hero.jpg); 
+	background-size: cover; 
+	min-height: 100vh; 
+	color:#fff; 
+	display: flex;
+	justify-content: flex-start; 
+	align-items: center; 
+	flex-direction: row; 
+	text-align: center;
+}
+
+.hero2{
+	background-image: url(./assets/hero2.jpg); 
+}
+
+
+.hero3{
+	background-image: url(./assets/hero3.jpg); 
+	min-height: 60vh; 
+}
+
+
+.hero-mid{
+
+	display: flex;
+	padding: 2%;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 50%;
+	height: 100%;
+}
+
+.hero h1{
+	font-size: 3.8rem; 
+	margin-bottom: 15px;  
+	font-weight: bold;  
+	padding-right: 230px;
+}
+
+.hero h3 {
+	font-size:2rem; 
+	margin-bottom: 25px;
+}
+.hero .btn {
+	width: 40%; 
+	margin-left: 60px; 
+	background-color: #fff; 
+	border-radius: 4px; 
+	color:#191c03; 
+	padding:20px 50px; 
+	text-transform: uppercase;
+	}
+
+@media (max-width: 1000px) {
+		
+	.hero-mid{
+		width: 100%;
+	}
+
+	.hero h1 {font-size: 2.5rem;
+			padding-right: 0px;}
+	.hero h3 {font-size: 1.5rem;}
+}
+
+/* -- FIM HERO  -- */
+
+/* -- CONTEÚDOS  -- */
+	.conteudo{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		height: 15%;
+		font-weight: bold;  
+	}
+
+	.conteudo h1{
+		margin-bottom: 25px;
+	}
+
+	.conteudo h2{
+		font-size:2rem; 
+		margin-bottom: 25px;
+		color: #ff6d3f;
+
+	}
+
+	.conteudos-wrap{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+		height: 80%;
+	}
+
+	.item-blog{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		width: 400px;
+		height: 600px;
+		background-color: #ffffff;
+		-webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.12);
+		-moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.12);
+		box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.12);
+	}
+	
+	.item-blog a{
+		color: #ff6d3f;
+		margin-left: 15px;
+	}
+
+	.item-blog-detalhe{
+		background-color: #cccccc;
+		width: 100%;
+		height: 40%;
+	}
+
+	.item-blog-img-1{
+		background-image: url(./assets/conteudo_1.jpg); 
+		background-size: cover; 
+	}
+	
+	.item-blog-img-2{
+		background-image: url(./assets/conteudo_2.jpg); 
+		background-size: cover; 
+	}
+	
+	.item-blog-img-3{
+		background-image: url(./assets/conteudo_3.jpg); 
+		background-size: cover; 
+	}
+	
+	.item-blog-img-4{
+		background-image: url(./assets/conteudo_4.jpg); 
+		background-size: cover; 
+	}
+
+	.item-blog-texto{
+		background-color: #ffffff;
+		width: 100%;
+		height: 60%;
+		padding: 2%;
+	}
+
+	.item-blog-texto h2{
+		font-size: 120%;
+		margin-bottom: 7px;
+	}
+/* -- CONTEÚDOS -- */
+	.centralizar-texto{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.centralizar-texto h1{
+		font-size: 170%;
+	}
+
+	.conteudo-do-blog{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: 1%;
+		padding: 3% 7% 7% 7%;
+		-webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.12);
+		-moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.12);
+		box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.12);
+	}
+
+	.conteudo-do-blog h2{
+		font-size: 130%;
+		margin-bottom: 15px;
+	}
+/* --  PÁGINA COM CONTEÚDO DO BLOG -- */
+
+
+
+/* --  PÁGINA COM CONTEÚDO DO BLOG -- */
+
+/* -- NEWSLETTER  -- */
+.newsletter {display: flex; flex-direction: column; align-items: center; padding: 100px 50px;}
+.newsletter h3 { font-size: 2rem; margin-bottom: 35px; color:#0e003f; text-align: center;}
+.newsletter p {max-width: 800px; margin-bottom: 35px; color:#0e003f; text-align: center;}
+.newsletter hr {width: 200px; height: 2px; background-color: #0e003f; margin-bottom: 70px; border:none;}
+.newsletter form {display: flex; align-items: center; justify-content: center; flex-wrap:wrap; width: 80%; max-width:800px;}
+.newsletter input {padding: 15px; border: 1px solid #0e003f; border-radius: 4px; margin-right: 15px; flex:1;}
+.newsletter button {padding: 15px; background-color: #21077e; color: #fff ; text-transform: uppercase; border: none;
+border-radius: 4px; cursor: pointer; }
+@media (max-width: 700px) {
+	
+	.newsletter input {flex-basis: 100%; margin-bottom: 15px}
+	
+}
+
+/* -- FIM NEWSLETTER  -- */
+
+/*FOOTER*/
+
+footer {display: flex; flex-direction: column; background-color:#070c4d; padding: 50px 0; align-items: center;}
+footer ul {display: flex; margin-bottom: 25px;}
+footer ul li {margin-right: 10px;}
+footer ul li:last-child {margin-right: 0;}
+footer ul li a {color: #ffffff; font-size: 2rem;}
+footer p {color: #ffffff; text-align: center;}
